@@ -60,14 +60,14 @@ To get started with the Food Order System, follow these steps:
 
 ![GET Orders](./screenshots/list_orders.png)
 
-<b> GET /orders/:id </b>
+<b> GET /orders/id </b>
 
 ![GET Order by ID](./screenshots/get_order_by_id.png)
 
-<b> PUT /orders/:id </b>
+<b> PUT /orders/id </b>
 
 ![Update Order Status](./screenshots/update_order_status.png)
 
-<b> DELETE /orders/:id </b>
+<b> DELETE /orders/id </b>
 
 ![DELETE Order](./screenshots/delete_order.png)
