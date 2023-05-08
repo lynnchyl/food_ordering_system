@@ -34,7 +34,7 @@ class OrderService {
 
             // Compare the calculated price with the total price provided by the user
             if (calculatedPrice !== totalPrice) {
-                throw new Error('Invalid total price');
+                throw new Error('Invalid total price.');
             }
 
             // Create a new order in the database
@@ -56,7 +56,6 @@ class OrderService {
         } catch (err) {
             // Handle any errors during the creation of the order
             console.error(err);
-            //   await t.rollback();
             throw new Error('Failed to create order.');
         }
     }
