@@ -5,25 +5,11 @@ This is a Food Order System that allows users to place orders for food items. Th
 ## Database 
 The database schema consists of the following tables:
 
-1. <b>Food</b>: This table stores information about the available food items. It includes columns such as:
-    i. id
-    ii. itemName
-    iii. itemPrice
-    iv. createdAt
-    v. updatedAt
+1. <b>Food</b>: This table stores information about the available food items. It includes columns such as id, itemName, itemPrice, createdAt, and updatedAt.
 
-2. <b>Orders</b>: This table represents orders placed by users. It contains columns like:
-    i. id
-    ii. totalPrice
-    iii.status
-    iv. createdAt
-    v. updatedAt
+2. <b>Orders</b>: This table represents orders placed by users. It contains columns like id, totalPrice, status, createdAt, and updatedAt.
 
-3. <b>OrderFood</b>: This table serves as an association table to establish a many-to-many relationship between Orders and Food tables. It includes columns like:
-    i. orderId
-    ii. foodId
-    iii. createdAt
-    iv. updatedAt
+3. <b>OrderFood</b>: This table serves as an association table to establish a many-to-many relationship between Orders and Food tables. It includes columns like orderId, foodId, createdAt, and updatedAt.
 
 ## APIs
 The system exposes the following RESTful APIs:
