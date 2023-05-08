@@ -28,15 +28,15 @@ The database schema consists of the following tables:
 ## APIs
 The system exposes the following RESTful APIs:
 
-1. POST /orders: Create a new order by providing order details such as orderItems (an array of food items with quantity) and totalPrice. Returns the created order.
+1. POST /orders Create a new order by providing order details such as orderItems (an array of food items with quantity) and totalPrice. Returns the created order.
 
-2. GET /orders/:id: Retrieve information about a specific order by its ID.
+2. GET /orders/id Retrieve information about a specific order by its ID.
 
-3. GET /orders: Retrieve a list of all orders placed.
+3. GET /orders Retrieve a list of all orders placed.
 
-4. PUT /orders/:id: Update the status of a specific order.
+4. PUT /orders/id Update the status of a specific order.
 
-5. DELETE /orders/:id: Delete a specific order.
+5. DELETE /orders/id Delete a specific order.
 
 You can use these APIs to interact with the Food Order System and perform operations such as placing orders, and retrieving order details.
 
