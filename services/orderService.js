@@ -23,7 +23,7 @@ class OrderService {
 
             // Check if the food items are valid or not 
             if (existingFoods.length !== foodIds.length) {
-                throw new Error('Invalid food items.');
+                throw new Error('Invalid food items');
             }
 
             // Calculate the total price of the order
@@ -34,7 +34,7 @@ class OrderService {
 
             // Compare the calculated price with the total price provided by the user
             if (calculatedPrice !== totalPrice) {
-                throw new Error('Invalid total price.');
+                throw new Error('Invalid total price');
             }
 
             // Create a new order in the database
@@ -56,7 +56,7 @@ class OrderService {
         } catch (err) {
             // Handle any errors during the creation of the order
             console.error(err);
-            throw new Error('Failed to create order.');
+            throw new Error('Failed to create order');
         }
     }
 
@@ -71,14 +71,14 @@ class OrderService {
             });
 
             if (!order) {
-                throw new Error('Order not found.');
+                throw new Error('Order not found');
             }
 
             return order;
         } catch (err) {
             // Handle any errors during the retrieval of the order
             console.error(err);
-            throw new Error('Order not found.');
+            throw new Error('Order not found');
         }
     }
 
@@ -91,7 +91,7 @@ class OrderService {
         } catch (err) {
             // Handle any errors during the retrieval of orders
             console.error(err);
-            throw new Error('Failed to retrieve orders.');
+            throw new Error('Failed to retrieve orders');
         }
     }
 
@@ -108,14 +108,14 @@ class OrderService {
             });
 
             if (updatedOrder[0] === 0) {
-                throw new Error('Order not found.');
+                throw new Error('Order not found');
             }
 
             return updatedOrder;
         } catch (err) {
             // Handle any errors during the update of the order
             console.error(err);
-            throw new Error('Failed to update order status.');
+            throw new Error('Failed to update order status');
         }
     }
 
@@ -131,7 +131,7 @@ class OrderService {
 
             // If the order doesn't exist, return error
             if (!order) {
-                throw new Error('Order not found.');
+                throw new Error('Order not found');
             }
 
             // Delete the order
@@ -141,7 +141,7 @@ class OrderService {
         } catch (err) {
             // Handle any errors during the update of the order
             console.error(err);
-            throw new Error('Failed to update order status.');
+            throw new Error('Failed to update order status');
         }
     }
 }
